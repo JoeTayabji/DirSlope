@@ -1,0 +1,74 @@
+Information from provider
+Extent	430657.5013367600040510,4511439.5055923098698258 : 433583.5013367600040510,4513556.5055923098698258
+Width	5852
+Height	4234
+Data type	Float64 - Sixty four bit floating point
+GDAL Driver Description	AAIGrid
+GDAL Driver Metadata	Arc/Info ASCII Grid
+Dataset Description	C:/Users/jtaya/OneDrive/Documents/DirSlope/matt_method_test/AlbertiDSlope/SLC_ZT_0_ZT_ud_0.0.asc
+Compression	
+Band 1	
+STATISTICS_APPROXIMATE=YES
+STATISTICS_MAXIMUM=81.88134766
+STATISTICS_MEAN=-8.2291545569214
+STATISTICS_MINIMUM=-77.39003754
+STATISTICS_STDDEV=18.546474458988
+STATISTICS_VALID_PERCENT=100
+Scale: 1
+Offset: 0
+More information	
+Dimensions	X: 5852 Y: 4234 Bands: 1
+Origin	430657.5013367600040510,4513556.5055923098698258
+Pixel Size	0.5,-0.5
+
+
+Coordinate Reference System (CRS)
+Unknown
+
+
+Identification
+Identifier	
+Parent Identifier	
+Title	
+Type	dataset
+Language	
+Abstract	
+Categories	
+Keywords	
+
+
+Extent
+CRS	
+Spatial Extent	
+Temporal Extent	
+
+
+Access
+Fees	
+Licenses	
+Rights	
+Constraints	
+
+
+
+
+Bands
+Band count	1
+
+Number	Band	No-Data	Min	Max
+1	Band 1	-99999	-77.3900375400	81.8813476600
+
+
+Contacts
+No contact yet.
+
+
+
+References
+No links yet.
+
+
+
+History
+No history yet.
+

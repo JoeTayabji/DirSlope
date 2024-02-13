@@ -1,0 +1,5 @@
+The DEM used is the SLC_DEM_Clip.tif file. 
+
+There are SLC_Horn and SLC_ZT rasters. These are the outputs from using the Directional Slope plugin. Both methods were used on a unidirectional value of 0 and 45, so there are 4 files. 
+
+For the qprof method, the same DEM was used on a trail called Living Room. The resulting line is living_room_out_line
