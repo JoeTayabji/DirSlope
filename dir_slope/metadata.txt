@@ -1,0 +1,47 @@
+# This file contains metadata for your plugin.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Dir Slope
+qgisMinimumVersion=3.0
+description=This plugin calculates directional slope along a line. A DEM is required.
+version=0.1
+author=Joe Tayabji, Dara Seidl
+email=jtayabji@gmail.com
+
+about=This plugin is designed to calculate the directional slope of a line. It takes two inputs: a line and a DEM raster, both of which must be projected. The output is a new line. The user can specify a sampling distance. The input line will be split at this distance into new segments. The directional slope is calculated at the midpoint of the new segment. This plugin uses Horn's method for calculating slope at any location (Horn, 1981). It then uses a trigonemtric calculation to adjust for directionality (Neteler and Mitášová, 2008). For a given cell at location e, a 3x3 kernel can be designated as: a b c d e f g h i From this, we can say the slope at e is: slope_radians = arctan ( sqrt ( [dz/dx]^2 + [dz/dy]^2) ) where: [dz/dx] = ( (c + 2f + i) - (a + 2d + g) ) / (8 * cellsize) [dz/dy] = ( (g + 2h + i) - (a + 2b + c) ) / (8 * cellsize) given: the cellsize is the spatial resolution of the DEM With this, we can say that the slope at location e with a bearing alpha is: directional slope (alpha) = arctan [ (dz/dx) * sin(alpha) + (dz/dy) * cos(alpha) ]
+
+tracker=http://bugs
+repository=http://repo
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=no
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=python
+
+homepage=http://homepage
+category=Plugins
+icon=icon.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+# Since QGIS 3.8, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=
+
+Category of the plugin: Raster, Vector, Database or Web
+# category=
+
+# If the plugin can run on QGIS Server.
+server=False
+
